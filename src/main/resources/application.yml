@@ -1,0 +1,14 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /doc-eureka-server
+
+#配置为Eureka的服务端-服务注册中心
+eureka:
+  instance:
+    hostname: Eureka-server
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
