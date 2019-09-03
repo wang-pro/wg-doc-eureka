@@ -1,7 +1,6 @@
 server:
   port: 9000
 
-#配置为Eureka的服务端-服务注册中心
 eureka:
   instance:
     hostname: Eureka-server
